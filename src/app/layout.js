@@ -9,7 +9,8 @@ import Head from 'next/head'; // Import Head from next/head
 
 const inter = Inter({ subsets: ["latin"] });
 
-const metadata = {
+// Define MetaData as a constant
+const MetaData = {
   title: "Aditya Bhattacharjee Dev",
   description: "Dev Portfolio",
 };
@@ -32,8 +33,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>{metadata.title}</title> {/* Set the title */}
-        <meta name="description" content={metadata.description} />
+        <title>{MetaData.title}</title> {/* Set the title */}
+        <meta name="description" content={MetaData.description} />
         <link rel="icon" href="/favicon.ico" /> {/* Default favicon */}
       </Head>
       <body className={inter.className}>
